@@ -91,10 +91,10 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
-  kennedi: { image: "images/collectables/kennedi-head.png" },
+  database: { image: "https://cdn.theatlantic.com/thumbor/yibLKbkCuRkgN1AXxkDmUzgOtu8=/0x0:1330x1662/648x810/media/img/2022/11/04/FootballV2/original.jpg" },
+  diamond: { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Football_%28soccer_ball%29.svg/1200px-Football_%28soccer_ball%29.svg.png" },
+  grace: { image: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Baseball_%28crop%29.jpg/1200px-Baseball_%28crop%29.jpg" },
+  kennedi: { image: "https://i.etsystatic.com/30289585/r/il/604ab8/4000444128/il_fullxfull.4000444128_sqwk.jpg" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
 };
