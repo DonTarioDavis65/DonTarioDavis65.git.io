@@ -67,7 +67,9 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
 			var points = 0;
-			var speed = 100;
+			var speed = 10;
+			var positionY;
+			var speedY;
 
 			
 			/* 
@@ -76,33 +78,15 @@
 			turn it around! 
 			*/
 			function update() {
-				positionX = speed + 10;
+				positionX = positionX + speed;
 				moveBoxTo(positionX)
-				positionX = speed;
-				moveBoxTo(boardwidth);
-				if (positionX = 50){
-					var boardWidth = 200;
-					console.log(speed = 100);
+				
+
+				if (positionX > boardWidth){
+					speed = -speed
 				}
-				else if (positionX = 150) {
-					var boardWidth = 200;
-					console.log(speed = 100);
-				}
-				else if (positionX = 250) {
-					var boardWidth = 200;
-					console.log(speed = 100);
-				}
-				else if (positionX = 250) {
-					var boardWidth = 200;
-					console.log(speed = -100);
-				}
-				else if (positionX = 150) {
-					var boardWidth = 200;
-					console.log(speed = -100);
-				}
-				else if (positionX = 50) {
-					var boardWidth = 200;
-					console.log(speed = -100);
+				if (positionX < 0) {
+					speed = -speed
 				}
 
 			};
@@ -115,8 +99,13 @@
 			function handleBoxClick() {	
 			positionX = 0;
 			points = points + 1;
-			speed = speed + 100;
 			changeBoxText(points);
+			if (speed = 10) {
+				speed + 10
+			}
+			else if (speed = -10 ) {
+				speed - 10
+			}
 			};
 		})();
 	</script>
