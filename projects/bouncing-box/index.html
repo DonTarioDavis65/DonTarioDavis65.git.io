@@ -68,9 +68,9 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
 			var points = 0;
-			var speed = 10;
+			var speed = 15;
 			var positionY;
-			var speedY;
+			var speedY = 10;
 			var boardHeight = jQuery(window).height();
 			
 			/* 
@@ -80,7 +80,7 @@
 			*/
 			function update() {
 				positionX = positionX + speed;
-				positionY = positionY + speed;
+				positionY = positionY + speedY;
 				moveBoxTo(positionX, positionY)
 				
 
@@ -108,6 +108,8 @@
 			positionX = 0;
 			positionY = 0;
 			points = points + 1;
+			speed = speed + 10;
+			
 			changeBoxText(points);
 			if (speed = 10) {
 				speed + 10
