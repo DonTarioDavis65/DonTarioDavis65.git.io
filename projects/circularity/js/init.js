@@ -22,6 +22,7 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
         var circle;
         var circles = [];
+       
 
         // TODO 2 : Create a function that draws a circle 
         function drawCircle() {
@@ -32,10 +33,12 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle(5);
-        for(drawCircle = 0 ; drawCircle < 100 ; drawCircle++){
+       function drawCircle() {
+        for(var drawCircle = 0 ; drawCircle < 100 ; drawCircle++){
             console.log(drawCircle);
         }
+       }
+        
 
 
         ////////////////////////////////////////////////////////////
@@ -76,14 +79,19 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
+            var rightEdge = circle.x + circle.radius;
+
             if ( circle.y > canvas.height) {
                 circle.y = 0;
             }
             if ( circle.y < canvas.height){
-                circle.y = -0;
+                circle.y = 0;
             }
-            if (circle.x < canvas.width){
-                circle.x = -0;
+            if (circle.x > canvas.width){
+                circle.x = 0;
+            }
+            if ( circle.x < canvas.width ) {
+                circle.x = 0;
             }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
